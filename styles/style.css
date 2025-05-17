@@ -1,0 +1,205 @@
+@font-face {
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 100;
+  font-display: swap;
+  src: url("../fonts/Outfit-Thin.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 200;
+  font-display: swap;
+  src: url("../fonts/Outfit-ExtraLight.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("../fonts/Outfit-Light.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/Outfit-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("../fonts/Outfit-Medium.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("../fonts/Outfit-SemiBold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("../fonts/Outfit-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url("../fonts/Outfit-ExtraBold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url("../fonts/Outfit-Black.ttf") format("truetype");
+}
+/********* standard resets *********/
+*, ::after, ::before {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+img, svg, canvas, video {
+  display: block;
+}
+
+/**********************************/
+body {
+  font-family: "Outfit", sans-serif;
+  font-size: 1.125rem;
+  background-color: hsl(217, 54%, 11%);
+  min-height: 100vh;
+  display: grid;
+  place-content: center;
+}
+
+main {
+  background-color: hsl(216, 50%, 16%);
+  max-width: 23.75rem;
+  padding: 1.6rem 1.5rem;
+  box-shadow: 0 20px 25px rgba(0, 0, 0, 0.4), 0 10px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 11px;
+}
+
+.image_wrapper img {
+  width: 100%;
+  border-radius: 9px;
+}
+
+.header {
+  margin-bottom: 1.4rem;
+  color: hsl(0, 0%, 100%);
+  font-weight: 600;
+  font-size: 1.5rem;
+  transition: 0.3s linear;
+}
+.header:hover {
+  color: hsl(178, 100%, 50%);
+  cursor: pointer;
+}
+
+.info {
+  line-height: 1.5;
+  color: hsl(215, 51%, 70%);
+  margin-bottom: 1.563rem;
+}
+
+.duration {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.563rem;
+}
+.duration .price__wrapper {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: hsl(178, 100%, 50%);
+}
+.duration .timeWrapper {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  color: hsl(215, 51%, 70%);
+}
+
+.name {
+  color: hsl(215, 51%, 70%);
+}
+
+span {
+  color: hsl(0, 0%, 100%);
+  transition: 0.3s linear;
+}
+span:hover {
+  color: hsl(178, 100%, 50%);
+  cursor: pointer;
+}
+
+.vertical__line {
+  background-color: hsl(215, 32%, 27%);
+  height: 0.094rem;
+  width: 100%;
+  border-radius: 5px;
+  margin-bottom: 1.2rem;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.profile .avatar {
+  width: 2.5rem;
+  border: 2px solid hsl(0, 0%, 100%);
+  border-radius: 50%;
+}
+
+main section:nth-child(1) {
+  position: relative;
+  margin-bottom: 1.563rem;
+}
+
+main section:nth-child(1):hover img {
+  display: block;
+  cursor: pointer;
+}
+
+main section:nth-child(1):hover .middle {
+  background-color: hsla(178, 100%, 50%, 0.5);
+  cursor: pointer;
+}
+
+.middle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  height: 100%;
+  width: 100%;
+  display: grid;
+  place-content: center;
+  border-radius: 9px;
+  transition: 0.3s linear;
+}
+.middle img {
+  display: none;
+}
+
+@media screen and (max-width: 25rem) {
+  main {
+    max-width: 21rem;
+  }
+}/*# sourceMappingURL=style.css.map */
